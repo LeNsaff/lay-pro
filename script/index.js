@@ -47,6 +47,7 @@ function showImage2(index) {
   });
 }
 
+
 function goToPrevious2() {
   currentIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
   showImage2(currentIndex2);
