@@ -70,9 +70,25 @@ a{
 }
 
 .pimg{
-    width: 30%;
+    display: none;
+    flex: 1;
+    width: calc(33.33% - 30px);
     height: 200px;
+    transition: all 1s ease;
     @include borderimg;
+}
+
+.pimg2{
+    flex: 1;
+    width: calc(33.33% - 30px);
+    height: 200px;
+    transition: all 1s ease;
+    @include borderimg;
+}
+
+.pimg.active{
+    display: block;
+    animation: fadeIn 0.5s;
 }
 
 hr{

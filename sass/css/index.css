@@ -1,4 +1,14 @@
 /*variables*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*variables*/
 a {
   font-size: 20px;
@@ -22,6 +32,16 @@ h3 {
 }
 
 /*variables*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*variables*/
 .logo {
   height: 200px;
@@ -92,11 +112,29 @@ a {
 }
 
 .pimg {
-  width: 30%;
+  display: none;
+  flex: 1;
+  width: calc(33.33% - 30px);
   height: 200px;
+  transition: all 1s ease;
   border-radius: 5px;
   border: 0px;
   box-shadow: 10px 5px 5px #a7a7a7;
+}
+
+.pimg2 {
+  flex: 1;
+  width: calc(33.33% - 30px);
+  height: 200px;
+  transition: all 1s ease;
+  border-radius: 5px;
+  border: 0px;
+  box-shadow: 10px 5px 5px #a7a7a7;
+}
+
+.pimg.active {
+  display: block;
+  animation: fadeIn 0.5s;
 }
 
 hr {
@@ -169,6 +207,16 @@ hr {
 }
 
 /*variables*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*variables*/
 a {
   font-size: 20px;
@@ -192,8 +240,28 @@ h3 {
 }
 
 /*variables*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*variables*/
 /*variables*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*variables*/
 a {
   font-size: 20px;
@@ -217,6 +285,16 @@ h3 {
 }
 
 /*variables*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*variables*/
 body {
   display: flex;

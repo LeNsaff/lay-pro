@@ -1,4 +1,4 @@
-/* inserer class "carousel-image" aux photos*/
+//carousel-image intro
 
 let currentIndex = 0;
 const images = document.querySelectorAll('.intro-image');
@@ -26,6 +26,40 @@ function goToNext() {
 showImage(currentIndex);
 setInterval(goToNext, 3000);
 
+//carousel-image realisation1 
+let currentIndex2 = 0;
+const images2 = document.querySelectorAll('.pimg');
+const visibleImages2 = 4; // Number of images visible at a time
+
+function showImage2(index) {
+  images2.forEach((img, i) => {
+    img.classList.remove('active');
+    let isvisible = false;
+    for (let j = 0; j < visibleImages2; j++) {
+      if ((index + j) % images2.length === i) {
+        isvisible = true;
+        break;
+      }
+    }
+    if (isvisible) {
+      img.classList.add('active');
+    }
+  });
+}
+
+function goToPrevious2() {
+  currentIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
+  showImage2(currentIndex2);
+}
+
+function goToNext2() {
+  currentIndex2 = (currentIndex2 + 1) % images2.length;
+  showImage2(currentIndex2);
+}
+
+// Initialize the carousel
+showImage2(currentIndex2);
+setInterval(goToNext2, 3000);
 
 //navbar scroll
 window.addEventListener('scroll', function() {
