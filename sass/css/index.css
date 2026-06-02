@@ -31,6 +31,10 @@ h3 {
   color: #39A5E9;
 }
 
+img {
+  background-size: cover;
+}
+
 /*variables*/
 @keyframes fadeIn {
   from {
@@ -64,8 +68,8 @@ a {
 }
 
 .hb {
-  width: 60%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   border-radius: 5px;
   border: 0px;
   margin: 0 auto 0 auto;
@@ -239,6 +243,10 @@ h3 {
   color: #39A5E9;
 }
 
+img {
+  background-size: cover;
+}
+
 /*variables*/
 @keyframes fadeIn {
   from {
@@ -282,6 +290,10 @@ h3 {
   font-size: 30px;
   margin: 0;
   color: #39A5E9;
+}
+
+img {
+  background-size: cover;
 }
 
 /*variables*/
@@ -366,7 +378,7 @@ main {
   justify-content: center;
   height: 400px;
   width: 50%;
-  gap: 30px;
+  gap: 0px;
   margin-left: 15px;
 }
 .bvn h3 {
