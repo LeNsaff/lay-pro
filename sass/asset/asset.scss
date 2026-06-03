@@ -2,6 +2,7 @@
 @import '../function/function.scss';
 @import '../mixin/mixin.scss';
 
+//nav
 .logo{
     height: 200px;
     width: 40%;
@@ -14,67 +15,94 @@ li{
 }
 
 a{
-    color: black;
+    color: black !important;
     text-decoration: none;
 }
 
 .navlink:hover{
-    font-size: 17px;
+    font-size: 20px;
+    
 }
 
+//accueil
+
 .hb{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     border: 0px;
     margin: 0 auto 0 auto;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
-.part{
-    height: 50%;
+
+
+.expimg{
     width: 100%;
+    height: 45%;
+    border-radius: 5px;
+    border: 0px;
     margin: auto;
-    object-fit: contain;
-}
-
-.rsimg{
-    background-color: grey;
-    width: 100%;
-    height: 90%;
-    margin: 0;
     object-fit: scale-down;
 }
 
-.intro-image{
-    font-family: Arial, sans-serif;
-    color: #fff;
-    text-align: center;
+.txtaccimg1{
     width: 100%;
     height: 100%;
-    display: none;
-    border: 0px;
     border-radius: 5px;
-    box-shadow: 10px 5px 5px #a7a7a7;
+    border: 0px;
+    margin: auto;
+    object-fit: cover;
 }
 
 
-.active{
-    display: block;
-}
+
+
+//service
 
 .srvimg{
-    width: 60%;
-    height: 200px;
+    width: 100%;
+    height: 400px;
+    @include borderimg;
+    object-fit: cover;
+}
+
+.logotxt{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+
+.txt1img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
     @include borderimg;
 }
 
+//projet
+
+.projetimg{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    @include borderimg;
+}
+
+.pimgl{
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+    border: 0px;
+    margin: auto;
+    object-fit: scale-down;
+}
+
 .pimg{
-    display: none;
-    flex: 1;
-    width: calc(33.33% - 30px);
+
+    width: 100%;
     height: 200px;
-    transition: all 1s ease;
+    object-fit: cover;
     @include borderimg;
 }
 
@@ -91,23 +119,42 @@ a{
     animation: fadeIn 0.5s;
 }
 
-hr{
-    border:solid 1.5px $colorlogo;
+//intro
+
+.intro-image{
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border: 0px;
     border-radius: 5px;
-    width: 70%;
+    box-shadow: 10px 5px 5px #a7a7a7;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+.aplogo{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto auto -10px auto;
+}
 
-  .footerlink{
-    font-weight: 300;
-    color: white;
-    font-size: 15px;
+.part{
+    height: 70%;
+    width: 100%;
+    object-fit: fill;
+}
+
+
+.active{
+    display: block;
+}
+
+.apimgl{
+    width: 30%;
+    height: 100%;
+    object-fit: scale-down;
 }
 
 .form{
@@ -145,4 +192,19 @@ hr{
     background-color: $colorlogo;
     width: 22%;
     height: 52px;
+}
+
+//footer
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+.footerlink{
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
 }

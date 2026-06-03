@@ -19,11 +19,24 @@ h1{
 h3{
     font-size: 30px;
     margin: 0;
-    color: $colorlogo;
+    color: black;
+}
+
+h4{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    color: black;
 }
 
 img{
     background-size:cover ;
+}
+
+hr{
+    border:solid 1.5px $colorlogo;
+    border-radius: 5px;
+    width: 70%;
 }
 
 $fontsize1: 17px;
