@@ -25,13 +25,11 @@
             </div>
 
             <div class="navdiv" id="navdivv">
-                <nav>    
-                    <li><a class="navlink" href="#accueil">Accueil</a></li>
-                    <li><a class="navlink" href="#services">Services</a></li>
-                    <li><a class="navlink" href="#projets">Projets</a></li>
-                    <li><a class="navlink" href="#a-propos">À propos</a></li>
-                    <li><a class="navlink" href="#contact">Devis en ligne</a></li>
-                </nav>
+                <button class="navlink" onclick="showSection('accueil')">Accueil</button>
+                <button class="navlink" onclick="showSection('service')">Services</button>
+                <button class="navlink" onclick="showSection('projet')">Projets</button>
+                <button class="navlink" onclick="showSection('intro')">À propos</button>
+                <button class="navlink" onclick="showSection('intro')">Devis en Ligne</button>
                 
             </div>
         </header>
@@ -41,9 +39,11 @@
                 <img src="laypro asset/layproban3.png" alt="Slide 1" class="intro-image ">
                 <img src="laypro asset/layproban2.jpg" alt="Slide 2" class="intro-image active">
                 <img src="laypro asset/layproban1.png" alt="Slide 3" class="intro-image ">
+                <img src="laypro asset/layproban4.png" alt="Slide 3" class="intro-image ">
+                <img src="laypro asset/layproban5.png" alt="Slide 3" class="intro-image ">
             </div>
 
-            <section class="accueil">
+            <section class="accueil page-section">
                 <div class="accside">
                     <section class="partctn">
                         <h3>Nos Domaines d'Expertise</h3>
@@ -115,7 +115,7 @@
             </section>
 
 
-            <section class="service">
+            <section class="service .page-section">
                 <h3>Une expertise multisectorielle reconnue</h3>
                 <hr>
                 <p>
@@ -219,7 +219,7 @@
             </section>
 
 
-            <section class="projet">
+            <section class="projet .page-section" >
                 <h3>Nos Domaines d'Activité</h3>
                 <hr>
 
@@ -310,7 +310,7 @@
 
             </section>
 
-            <section class="intro" id="a-propos">
+            <section class="intro .page-section" >
                 <div class="introtxt">
 
                     <section class="apropos">
